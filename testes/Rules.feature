@@ -31,7 +31,7 @@ Funcionalidade: Verifica regras do sistema
     Entao confirmo a mensagem de erro
     
 	@NumeroMaximoEvento
-	Esquema do Cenario: Valida o n�mero maximo de pessoas num evento
+	Esquema do Cenario: Valida o numero maximo de pessoas num evento
 		Dado que estou na tela de compras de ingresso
 		Quando eu escrevo no campo <qntIngressos>
 		E clico no botao comprar
