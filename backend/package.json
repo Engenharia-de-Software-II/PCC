@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "set NODE_ENV=dev && nodemon src/index.js --ignore __tests__",
     "start": "set NODE_ENV=production && node src/index.js",
-    "test": "set NODE_ENV=test && jest –-detectOpenHandles --forceExit"
+    "test": "set NODE_ENV=test && jest --detectOpenHandles --forceExit"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
