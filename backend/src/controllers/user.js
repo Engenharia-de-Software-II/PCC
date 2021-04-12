@@ -48,7 +48,7 @@ module.exports = {
 
             user.password = undefined;
 
-            return res.send({ user, token: await generateToken({ id: user._id, admin: admin }) });
+            return res.send({ user, token: await generateToken({ id: user._id }) });
         }
         catch (err) {
             return res.status(500).send({ message: 'Internal Error' });
@@ -70,7 +70,7 @@ module.exports = {
             if(!await bcrypt.compare(password, user.password))
                 return res.status(400).send({ message: 'Invalid email or password' });
 
-            return res.send({ user, token: await generateToken({ id: user._id, admin: user.amdin }) });
+            return res.send({ user, token: await generateToken({ id: user._id }) });
 
         }
         catch (err) {

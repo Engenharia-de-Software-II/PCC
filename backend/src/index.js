@@ -45,6 +45,4 @@ app.use('/event', eventsRoutes);
 
 const listener = app.listen(process.env.PORT || 3333);
 
-module.exports = {
-    listener
-}
+module.exports = listener;

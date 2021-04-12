@@ -22,7 +22,6 @@ module.exports = (req, res, next) => {
             return res.status(401).send({ message: 'Token invalid' });
 
         req.userId = decoded.id;
-        req.isAdmin = decoded.admin;
         return next()
     })
 };
